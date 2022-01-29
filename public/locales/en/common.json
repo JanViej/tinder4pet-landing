@@ -1,0 +1,567 @@
+{
+  "title": {
+    "returnPolicy": "Return Policy",
+    "privacyPolicy": "Privacy",
+    "terms": "Terms",
+    "termsOfConditions": "Terms of Conditions",
+    "termsAndConditions": "Terms and Conditions",
+    "home": "Homescreen",
+    "shop": "Shop",
+    "product": "Product",
+    "checkOut": "Check-out",
+    "aboutUs": "About us",
+    "blogs": "Blog"
+  },
+  "text": {
+    "scrollMore": "Scroll to see more"
+  },
+  "products": {
+    "customize": "Customize your choice",
+    "filterBy": "Filter by",
+    "outOfStock": "Out of stock",
+    "noResults": "No results found",
+    "location": {
+      "delivery": "Address",
+      "pick-up": "Location",
+      "placeholder": {
+        "delivery": "Please enter your shipping address",
+        "pick-up": "Bosgaurus Saigon Pearl (D5, 92, Villa, Đ. Nguyễn Hữu Cảnh, Saigon Pearl, Bình Thạnh)"
+      }
+    },
+    "pick-up": "Pick-up",
+    "delivery": "Delivery",
+    "ifYouWantToLeave": "If you want to leave a note, enter it here",
+    "addToCart": "Add to cart",
+    "added": "Added"
+  },
+  "header": {
+    "shop": "Shop",
+    "ourStory": "Our Story",
+    "profile": "Profile",
+    "forYou": "For you",
+    "shows": "Shows",
+    "contactUs": "Contact us",
+    "library": "Library",
+    "cart": "Cart",
+    "myOrder": "My Order"
+  },
+  "footer": {
+    "feedback": "Feedback",
+    "description": "We connect art-lovers with talented artists",
+    "aboutUs": "About us",
+    "joinOurTeam": "Join our team",
+    "press": "Press",
+    "BosgaurusForArtists": "Bosgaurus for Artists",
+    "BosgaurusForGalleries": "Bosgaurus for Galleries",
+    "allArtworks": "All artworks",
+    "allArtists": "All artists",
+    "allGalleries": "All galleries",
+    "contactUs": "Contact us",
+    "helpCenter": "Help Center",
+    "copyright": "Copyright",
+    "allRightReserved": "All right reserved."
+  },
+  "error": {
+    "title": "Oops!",
+    "description": "Something wrong",
+    "required": "This field is required",
+    "waitingUpdate": "N/A",
+    "cartEmpty": "Cart is empty"
+  },
+  "success": {
+    "title": "Success",
+    "descriptionContactGallery": "Send data successfully.",
+    "changePassword": "Password changed successfully",
+    "cancelOrder": "Cancel order successfully"
+  },
+  "button": {
+    "addAddress": "Add Address",
+    "send": "Send",
+    "done": "Done",
+    "close": "Close",
+    "createAccount": "Create account",
+    "backHome": "Back to Homescreen",
+    "viewAll": "View all",
+    "orderDelivery": "Order delivery",
+    "readMore": "Read more",
+    "register": "Register",
+    "accessYourPMS": "Access your PMS",
+    "submit": "Submit",
+    "follow": "Follow",
+    "unFollow": "Un Follow",
+    "following": "Following",
+    "share": "Share",
+    "next": "Next",
+    "skip": "Skip",
+    "contactUs": "Contact us",
+    "viewOnMaps": "View on maps",
+    "call": "Call",
+    "direction": "Direction",
+    "back": "Back",
+    "apply": "Apply",
+    "continue": "Continue",
+    "change": "Change",
+    "save": "Save",
+    "unSave": "Un Save",
+    "saving": "Saving",
+    "saved": "Saved",
+    "cancel": "Cancel",
+    "viewOnWall": "View on wall",
+    "cancelOrder": "Cancel order",
+    "cancelOffer": "Cancel offer",
+    "iNeedSupport": "I need support",
+    "edit": "Edit",
+    "createAccountFree": "Onboard your work",
+    "create": "Create",
+    "setUpAppointment": "Set up an appointment",
+    "backToHomepage": "Back to Homepage",
+    "complete": "Complete",
+    "buyNow": "Buy now",
+    "loadMore": "Load more",
+    "FBEvent": "FB Event",
+    "showMore": "Show more",
+    "remove": "Remove",
+    "checkout": "Check-out",
+    "showLess": "show less",
+    "signIn": "Sign in",
+    "logout": "Logout",
+    "showAll": "Show all",
+    "backToProfile": "Back to {{name}} profile",
+    "browseAll": "Browse all"
+  },
+  "input": {
+    "notAvailable": "Not available",
+    "name": {
+      "label": "Name",
+      "placeholder": "Enter your name"
+    },
+    "postalCode": {
+      "label": "Postal Code",
+      "placeholder": "Enter your Postal Code"
+    },
+    "zipCode": {
+      "label": "Zip Code",
+      "placeholder": "Enter your Zip Code",
+      "validateMsg": {
+        "required": "Zip code is required"
+      }
+    },
+    "firstName": {
+      "label": "First name",
+      "placeholder": "Enter your first name",
+      "validateMsg": {
+        "required": "First name is required",
+        "invalid": "First name is invalid"
+      }
+    },
+    "lastName": {
+      "label": "Last name",
+      "placeholder": "Enter your last name",
+      "validateMsg": {
+        "required": "Last name is required",
+        "invalid": "Last name is invalid"
+      }
+    },
+    "buildingDetail": {
+      "label": "Building Detail",
+      "placeholder": "Building Detail",
+      "validateMsg": {
+        "required": "Building Detail is required",
+        "invalid": "Building Detail is invalid"
+      }
+    },
+    "apartmentDetail": {
+      "label": "Apartment Detail",
+      "placeholder": "Apartment Detail",
+      "validateMsg": {
+        "required": "Apartment Detail is required",
+        "invalid": "Apartment Detail is invalid"
+      }
+    },
+    "specialInstruction": {
+      "label": "Special Instruction",
+      "placeholder": "Special Instruction",
+      "validateMsg": {
+        "required": "Special Instruction is required",
+        "invalid": "Special Instruction is invalid"
+      }
+    },
+    "note": {
+      "label": "Note",
+      "placeholder": "If you want to leave some notes",
+      "validateMsg": {
+        "required": "Note is required",
+        "invalid": "Note is invalid"
+      }
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Email",
+      "validateMsg": {
+        "required": "Email is required",
+        "invalid": "Email is invalid"
+      }
+    },
+    "code": {
+      "label": "Code",
+      "placeholder": "Code",
+      "validateMsg": {
+        "required": "Code is required",
+        "invalid": "Code is invalid"
+      }
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Message",
+      "validateMsg": {
+        "required": "Message is required",
+        "invalid": "Message is invalid"
+      }
+    },
+    "phone": {
+      "label": "Phone number",
+      "placeholder": "Phone number",
+      "validateMsg": {
+        "required": "Phone number is required",
+        "invalid": "Phone number is invalid"
+      }
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Enter your password",
+      "validateMsg": {
+        "required": "Password is required",
+        "invalid": "Password is invalid",
+        "notMatch": "The two passwords that you entered do not match!"
+      }
+    },
+    "currentPassword": {
+      "label": "Current password",
+      "placeholder": "Enter your current password"
+    },
+    "newPassword": {
+      "label": "New password",
+      "placeholder": "Enter your new password",
+      "validateMsg": {
+        "required": "New password is required",
+        "invalid": "New password is invalid",
+        "notMatch": "The two passwords that you entered do not match!"
+      }
+    },
+    "repeatNewPassword": {
+      "label": "Repeat new password",
+      "placeholder": "Enter your new password"
+    },
+    "confirmPassword": {
+      "label": "Confirm password",
+      "placeholder": "Enter your password",
+      "validateMsg": {
+        "required": "Confirm password is required",
+        "invalid": "Confirm password is invalid"
+      }
+    },
+    "fullName": {
+      "label": "Full name",
+      "placeholder": "Full name"
+    },
+    "job": {
+      "label": "Job",
+      "placeholder": "Job title"
+    },
+    "location": {
+      "label": "Location"
+    },
+    "time": {
+      "label": "Time"
+    },
+    "popularity": {
+      "label": "Popularity"
+    },
+    "nationality": {
+      "label": "Nationality",
+      "searchPlaceholder": "Search a nationality"
+    },
+    "introduction": {
+      "label": "Introduction",
+      "placeholder": "Introduction"
+    },
+    "address": {
+      "label": "Address",
+      "placeholder": "Address",
+      "validateMsg": {
+        "required": "Address is required"
+      }
+    },
+    "additionalAddress": {
+      "label": "Additional address",
+      "placeholder": "Building, apartment, etc.",
+      "validateMsg": {
+        "required": "Address is required"
+      }
+    },
+    "country": {
+      "label": "Country",
+      "placeholder": "Please select",
+      "searchPlaceholder": "Search a country",
+      "validateMsg": {
+        "required": "Country is required"
+      }
+    },
+    "city": {
+      "label": "City",
+      "placeholder": "Please select",
+      "searchPlaceholder": "Search a city",
+      "validateMsg": {
+        "required": "City is required"
+      }
+    },
+    "state": {
+      "label": "State",
+      "placeholder": "Please type",
+      "validateMsg": {
+        "required": "State is required"
+      }
+    },
+    "searchCategory": {
+      "placeholder": "Search category"
+    },
+    "receiverName": {
+      "label": "Receiver Name",
+      "placeholder": "Enter receiver name",
+      "validateMsg": {
+        "required": "Receiver name is required"
+      }
+    },
+    "year": {
+      "label": "Year"
+    }
+  },
+  "common": {
+    "forTransaction": "for transaction",
+    "over": "over",
+    "filters": "Filters",
+    "sort": "Sort",
+    "follower": "follower",
+    "closed": "Closed",
+    "closedOrByAppointment": "Closed or By appointment",
+    "contact": "Contact",
+    "listPrice": "List price",
+    "comingSoon": "Coming soon",
+    "needSupport": "Need Support?",
+    "description": "Description",
+    "lastUpdated": "Last updated",
+    "addedOn": "Added on",
+    "lastEdit": "Last edit",
+    "resolution": "Resolution",
+    "under": "Under",
+    "by": "by",
+    "price": "Price",
+    "schedule": "Schedule",
+
+    "untitled": "Untitled",
+    "pleaseType": "Please type",
+    "search": "Search",
+    "currency": "Currency",
+    "min": "Min",
+    "max": "Max"
+  },
+  "daysOfWeek": {
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "mondayToFriday": "Monday \u2014 Friday"
+  },
+  "home": {
+    "orderDelivery": "Oder now, deliver quickly",
+    "editorChoice": "Editor's Choices",
+    "title": "Home",
+    "shop": "Shop",
+    "personalize": "Personalize your choice",
+    "madeToOrder": "Made to order",
+    "coffee": "Coffee",
+    "goods": "Goods",
+    "service": "Service",
+    "learn": "Learn",
+    "wholeSale": "Wholesale",
+    "company": "Company",
+    "aboutUs": "About us",
+    "blog": "Blog",
+    "sustainability": "Sustainability",
+    "careerers": "Careerers",
+    "farmCooperative": "Farm Cooperative",
+    "facebook": "Facebook",
+    "linkedin": "Linkedin",
+    "instagram": "Instagram",
+    "support": "Support"
+  },
+  "seo": {
+    "home": {
+      "title": "Bosgaurus - Discover original works in the art world",
+      "description": "Discover, search, buy artworks, artists, and galleries around you. Sell your own works and get offers from art-lovers around the world."
+    },
+    "aboutUs": {
+      "title": "About Bosgaurus",
+      "description": "Bosgaurus brings a conservative area into a new era where artists can publish their artworks worldwide and buyers can find them with clicks and taps only."
+    }
+  },
+  "maps": {
+    "title": "Maps"
+  },
+  "status": {
+    "negotiating": "Negotiating",
+    "cancelled": "Cancelled"
+  },
+  "getOurApp": {
+    "title": "Get our app to view this painting on your wall",
+    "description": "With our app, you don\u2019t just experience AR technology but also getting a daily artwork to view, save your favorite paintings, and more."
+  },
+  "auth": {
+    "hello": "Hello there",
+    "connectWith": "Or connect with",
+    "connectWithFacebook": "Connect with Facebook",
+    "connectWithGoogle": "Connect with Google",
+    "connectWithPhoneNumber": "Connect with Phone number",
+    "authPrivacyTerm": {
+      "l1": "By continuing, you agree with our ",
+      "l2": " and "
+    },
+    "register": "Register",
+    "forgotPassword": "Forgot password",
+    "login": "Login",
+    "signIn": "Sign in",
+    "questionLogin": "Already have an account? ",
+    "questionRegister": "Don\u2019t have an account? ",
+    "questionForget": "Forget your current password?"
+  },
+  "forgotPassword": {
+    "done": "Done",
+    "doneDescription": "We have sent an email to your provided email. Please kindly check.",
+    "title": "Forget your password",
+    "description": "An email with reset code will be sent to your provided email to let you create your new password"
+  },
+  "login": {
+    "title": "Good evening",
+    "firstTitle": "Hello there!",
+    "secondTitle": "Welcome back to Bosgaurus"
+  },
+  "register": {
+    "title": "Good morning"
+  },
+  "resetPassword": {
+    "title": "Reset password",
+    "titleCode": "Please enter the code sent to your email",
+    "sendCode": "Send Code",
+    "titleResetPassword": "Set up your new password",
+    "congratulations": "Congratulations",
+    "successDesc": "Your password has been reset. Please sign in again."
+  },
+  "openingHour": {
+    "description": "You can leave your information in the form, our expert will contact you back. \nOr you can actively set up an appointment with us."
+  },
+  "appInfo": {
+    "mail": ""
+  },
+  "copyright": {
+    "copyrightInfo": "Copyright information"
+  },
+
+  "languages": {
+    "en": "EN",
+    "vi": "VI"
+  },
+  "contactUs": {
+    "formDesc": "By sending, you agree that we can use your provided contact to reach out to you.",
+    "formTitle": "You can leave us a message, we will shortly contact you back",
+    "contactBOS": "Contact BOSGAURUS",
+    "title": "Contact Us",
+    "BosgaurusCorporation": "Bosgaurus Corporation",
+    "contact": "Contact us",
+    "email": "Email us: {{email}}",
+    "phone": "Call us at {{phone}}",
+    "address": "92 Nguyen Huu Canh, Villa 1D5, Ward 22, Binh Thanh Dist. HCMC, Vietnam"
+  },
+  "cart": {
+    "title": "Cart",
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "shipping": "Shipping",
+    "totalItems": "Total ({{total}} items)",
+    "addPromoCode": "Add promo code",
+    "myOrder": "My Order",
+    "empty": "Your cart is empty"
+  },
+  "gender": {
+    "placeholder": "Mr/Ms",
+    "mr": "Mr",
+    "ms": "Ms"
+  },
+  "deliveryType": {
+    "pick-up": "Pick-up",
+    "delivery": "Delivery"
+  },
+  "paymentMethod": {
+    "cod": "Cash on Delivery (COD)",
+    "card": "Credit card / ATM",
+    "momo": "Momo"
+  },
+  "checkOut": {
+    "title": "Checking out",
+    "contactInfo": "Contact Info",
+    "signIn": "Sign in for faster ordering",
+    "shippingMethod": "Shipping Method",
+    "paymentMethod": "Payment Method",
+    "note": "Note",
+    "checkOutSuccess": "We have received your order and will get it ready as soon as possible",
+    "thankYou": "Thank you for choosing Bosgaurus, enjoy your coffee.",
+    "thankYouDesc": "If you have any inquiries, please feel free to contact us via +84 (0) 123 456 789. You can track your order status here",
+    "orderNumber": "Order number",
+    "congratulations": "Congratulations",
+    "orderSuccess": "Order Successfully"
+  },
+  "address": {
+    "office": "Head Office",
+    "create": "Add an address",
+    "update": "Edit address",
+    "confirmDelete": "Are you sure to delete this address?"
+  },
+  "profile": {
+    "header": "Profile",
+    "orders": "Orders",
+    "addresses": "Shipping Address",
+    "changePassword": "Change Password"
+  },
+  "orders": {
+    "onGoing": "Ongoing",
+    "past": "Past",
+    "noPastOrders": "No Past Orders",
+    "noOnGoingOrders": "No Ongoing Orders",
+    "orderID": "Order ID: #{{id}}",
+    "itemPrice": "{{quantity}} items ({{price}})",
+    "itemStatus": "Status: {{status}}",
+    "expectedDeliveryTime": "Expected delivery time: {{time}}",
+    "userPickUp": "Customer Pick-up",
+    "itemAddress": "Delivery to: {{address}}",
+    "confirmCancel": "Are you sure you want to cancel this order?"
+  },
+  "orderStatus": {
+    "submitted": "Submitted",
+    "processing": "Processing",
+    "ready": "Ready",
+    "delivering": "Delivering",
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "waitingForPayment": "Waiting for payment"
+  },
+  "miscellaneous": {
+    "lastUpdate": "Last update on {{date}}"
+  },
+  "blogs": {
+    "title": "Blogs at BOS."
+  }
+}
