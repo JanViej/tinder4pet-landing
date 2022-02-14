@@ -268,7 +268,7 @@ const GlobalStyle = createGlobalStyle`
 
   .ant-input::placeholder {
     font-weight: 400 !important;
-    color: #454545;
+    color: #ccc;
   }
 
   .d-flex {
