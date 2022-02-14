@@ -19,6 +19,10 @@ function App({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css?family=Livvic:wght@300;400;500;600;700;900&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css?family=Pacifico"
+          rel="stylesheet"
+        />
         {/* <script
           src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_KEY_GOOGLE_MAP}&v=3.exp&libraries=places`}
         /> */}
