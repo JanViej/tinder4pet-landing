@@ -12,12 +12,18 @@ const fade = keyframes`
 `;
 
 export const HeaderStyles = styled.div`
-  background: #fff;
-  position: fixed;
+  background: transparent;
+  position: absolute;
   z-index: 1000;
   left: 0;
   right: 0;
   top: 0;
+
+  ${'' /* background-position: right;
+  background-image: url('/images/path-background.png');
+  background-repeat: no-repeat;
+  background-size: 63%; */}
+
 
   .header-left {
     .page-title {
@@ -82,7 +88,7 @@ export const HeaderStyles = styled.div`
 
   .header-wrapper {
     padding: 10px 0;
-    background: #fff;
+    background: transparent;
     height: 100%;
 
     .header-center {

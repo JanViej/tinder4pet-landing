@@ -6,7 +6,7 @@ import { Fade } from 'react-awesome-reveal';
 import styled from 'styled-components';
 import Link from '@uikit/commons/Link';
 
-const IndexFeature = ({ className, title, description, image, isReversed, buttonText, buttonLink }) => (
+const IndexFeature = ({ className, title, description, image, isReversed, buttonText, buttonLink, extraContent }) => (
   <div className={`wrapper-container index-feature ${className}`}>
     <IndexFeatureWrapper
       gutter={40}
@@ -18,6 +18,7 @@ const IndexFeature = ({ className, title, description, image, isReversed, button
           <Fade fraction={0.5} triggerOnce>
             <div className="description">
               {formatI18nData(description)}
+              {extraContent && extraContent}
             </div>
           </Fade>
           {buttonLink && (
@@ -125,6 +126,7 @@ IndexFeature.propTypes = {
   isReversed: PropTypes.bool,
   buttonText: PropTypes.string,
   buttonLink: PropTypes.string,
+  extraContent: PropTypes.node,
 }
 
 export default IndexFeature

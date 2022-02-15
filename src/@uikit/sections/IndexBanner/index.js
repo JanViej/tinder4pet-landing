@@ -28,7 +28,7 @@ export default function IndexBanner({ images, title, description }) {
                 </h2>
                 <div className="font-title banner-title">perfect match</div>
                 <Fade delay={0.3} fraction={0.5} triggerOnce>
-                  <Link href="/products">
+                  <Link href="https://drive.google.com/file/d/1Z0wXsBzATppdVQHKtDpydn3P12E7mDEg/view?usp=sharing">
                     <span className="link-wrapper">
                       <span className="link">Get our app</span>
 
@@ -66,15 +66,17 @@ const IndexBannerWrapper = styled.div`
   width: 100%;
   height: 100%;
   ${'' /* align-items: center; */}
-  ${'' /* background-position: right;
+  background-position: right;
   background-image: url('/images/path-background.png');
-  background-repeat: no-repeat; */}
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   .wrapper-container {
     .ant-row {
       width: 100%;
     }
+
+    margin-top: 48px;
   }
 
   .product-images-actions {

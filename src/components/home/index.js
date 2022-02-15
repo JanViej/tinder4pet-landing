@@ -1,9 +1,9 @@
-import IndexBanner from '@uikit/sections/IndexBanner'
-import ShowCaseSection from '@uikit/sections/ShowCaseSection'
-import SubmitSection from '@uikit/sections/SubmitSection'
-import IndexFeature from '@uikit/sections/IndexFeature'
-import { useTranslation } from 'react-i18next'
-import styled, { createGlobalStyle } from 'styled-components'
+import IndexBanner from '@uikit/sections/IndexBanner';
+import ShowCaseSection from '@uikit/sections/ShowCaseSection';
+import SubmitSection from '@uikit/sections/SubmitSection';
+import IndexFeature from '@uikit/sections/IndexFeature';
+import { useTranslation } from 'react-i18next';
+import styled, { createGlobalStyle } from 'styled-components';
 import Link from 'next/link';
 import EditorChoice from './EditorChoice';
 
@@ -19,15 +19,15 @@ const OverwriteGlobalStyle = createGlobalStyle`
 `;
 
 const Home = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <>
       {/* <OverwriteGlobalStyle /> */}
       <HomeWrapper>
         <IndexBanner />
-        <ShowCaseSection className="show-case-scroll wrapper-full-height" />
-        
+        {/* <ShowCaseSection className="show-case-scroll wrapper-full-height" /> */}
+
         <IndexFeature
           className="wrapper-full-height"
           isReversed
@@ -40,6 +40,15 @@ const Home = () => {
             vi: 'Find your pet a friend anywhere, anytime with just a few clicks',
           }}
           image="/images/bg5.png"
+          extraContent={
+            <div>
+              <br />
+              <li>Create beautiful profile</li>
+              <li>Get match in your area</li>
+              <li>Chat, video call, phone call</li>
+              <li>Find a vet or pet store</li>
+            </div>
+          }
         />
 
         <IndexFeature
@@ -63,8 +72,8 @@ const Home = () => {
         </div> */}
       </HomeWrapper>
     </>
-  )
-}
+  );
+};
 
 const HomeWrapper = styled.div`
   .product-section {
@@ -75,16 +84,16 @@ const HomeWrapper = styled.div`
     .section-title {
       font-size: 38px;
     }
-
-    
   }
   .mobile-view-btn {
     display: none;
   }
 
-  ${'' /* .choice-section {
+  ${
+    '' /* .choice-section {
     margin-bottom: 30px;
-  } */}
+  } */
+  }
 
   .product-list-scroll {
     margin-bottom: 40px;
@@ -140,6 +149,6 @@ const HomeWrapper = styled.div`
       }
     }
   }
-`
+`;
 
 export default Home;

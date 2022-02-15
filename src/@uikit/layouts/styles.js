@@ -4,7 +4,7 @@ import { Layout } from 'antd';
 export const PublicLayoutStyles = styled(Layout)`
   min-height: 100vh;
   .ant-layout-content {
-    margin-top: 64px;
+    margin-top: 0;
     ${'' /* padding-bottom: 30px; */}
     width: 100%;
     ${
