@@ -93,9 +93,6 @@ export const CSS_COMMON = `
     font-weight: bold;
   }
 
-  .fw-400 {
-    font-weight: 400;
-  }
   .fw-500 {
     font-weight: 500;
   }

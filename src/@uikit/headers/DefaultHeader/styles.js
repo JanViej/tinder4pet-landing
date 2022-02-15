@@ -19,12 +19,18 @@ export const HeaderStyles = styled.div`
   right: 0;
   top: 0;
 
+  .header-left {
+    .page-title {
+
+      display: flex;
+      align-items: center !important;
+    }
+  }
+
   .header-center {
     width: 370px;
 
     .page-title {
-      display: flex;
-      align-items: center;
       justify-content: center;
       height: 100%;
       font-size: 20px;

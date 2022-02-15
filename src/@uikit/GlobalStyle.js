@@ -160,9 +160,6 @@ const GlobalStyle = createGlobalStyle`
     color: var(--primary);
   }
 
-  .sub-title {
-    font-weight: 400;
-  }
 
   .label {
     background-color: var(--bg-light);
@@ -266,10 +263,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  .ant-input::placeholder {
-    font-weight: 400 !important;
-    color: #ccc;
-  }
+  
 
   .d-flex {
     display: flex;
