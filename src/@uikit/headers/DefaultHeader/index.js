@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 
 // import PropTypes from 'prop-types';
-import { Layout, Button } from 'antd';
+import { Layout, Button, Image } from 'antd';
 import set from 'lodash/set';
 import { MenuOutlined } from '@ant-design/icons';
 import { useSelector, useDispatch } from 'react-redux';
@@ -20,7 +20,6 @@ import Link from '../../commons/Link';
 // });
 
 const Header = () => {
-
   const mobileMenuModalRef = useRef();
   const mobileSearchRef = useRef();
   const dispatch = useDispatch();
@@ -52,39 +51,27 @@ const Header = () => {
       <HeaderStyles>
         <Layout.Header className="mainHeader wrapper-container">
           <div className="header-wrapper w-full flex-center-between">
-            <div className="header-left d-flex">
-              <Button
-                onClick={handleClickMenuIcon}
-                className="mobile-menu-icon"
-                type="text"
-                size="large"
-                icon={<MenuOutlined />}
-              />
-              <MenuHeader />
-              {/* <div className="header-logo">
-                <Link href="/">
-                  <img alt="logo" src="/svg/logo-dark.svg" />
-                </Link>
-              </div> */}
-
-              {/* <Input
-                className="header-search-input"
-                placeholder={t('header.searchHeaderPlaceholder')}
-                size="large"
-                defaultValue={router?.query?.q}
-                suffix={<SearchOutlined />}
-              /> */}
-            </div>
-            <div className="header-center">
+            <div className="header-left">
               <Link href="/">
-                <div className="page-title font-title">TINDER4PET</div>
+                <div className="page-title font-title size-xl">
+                  <Image
+                    className="section-image"
+                    preview={false}
+                    src="/images/logo.png"
+                    width={34}
+                  />
+                  Tinder4pet
+                </div>
               </Link>
+            </div>
+            <div className="header-right">
+              <Button type="primary">Be a part of us</Button>
             </div>
           </div>
         </Layout.Header>
       </HeaderStyles>
-      <DrawerMenuMobile ref={mobileMenuModalRef} />
-      <DrawerSearchMobile ref={mobileSearchRef} />
+      {/* <DrawerMenuMobile ref={mobileMenuModalRef} />
+      <DrawerSearchMobile ref={mobileSearchRef} /> */}
     </>
   );
 };

@@ -9,7 +9,7 @@ const fade = keyframes`
     opacity: 1;
     
   }
-`
+`;
 
 export const HeaderStyles = styled.div`
   background: #fff;
@@ -30,8 +30,6 @@ export const HeaderStyles = styled.div`
       font-size: 20px;
     }
 
-
-    
     .logo {
       background-image: url('/images/logo.png');
       height: 40px;
@@ -95,11 +93,13 @@ export const HeaderStyles = styled.div`
         object-fit: contain;
       }
 
-      ${'' /* @media only screen and (max-width: 1100px) {
+      ${
+        '' /* @media only screen and (max-width: 1100px) {
         left: 0px;
         padding-left: 0px;
         transform: translate(0px, -50%);
-      } */}
+      } */
+      }
     }
   }
 
@@ -244,19 +244,25 @@ export const HeaderStyles = styled.div`
         background-size: 80px;
 
         &:hover {
-          
           height: 40px;
           background-size: 80px;
           ${'' /* transition: all 0.3s ease; */}
           animation: none;
         }
       }
+
+      
     }
 
     .header-right {
-      .languages-dropdown, .user-info {
+      .languages-dropdown,
+      .user-info {
         display: none !important;
-      
+      }
+
+      .ant-btn {
+        border-radius: 8px;
+        background: var(--primary);
       }
     }
   }
