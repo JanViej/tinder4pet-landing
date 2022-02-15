@@ -5,7 +5,7 @@ import { Layout, Button, Image } from 'antd';
 import set from 'lodash/set';
 import { MenuOutlined } from '@ant-design/icons';
 import { useSelector, useDispatch } from 'react-redux';
-
+import { useRouter } from 'next/router';
 import { setModalConfig } from '@redux/config/actions';
 import { useTranslation } from 'react-i18next';
 import dynamic from 'next/dynamic';
@@ -23,12 +23,13 @@ const Header = () => {
   const mobileMenuModalRef = useRef();
   const mobileSearchRef = useRef();
   const dispatch = useDispatch();
+  const router = useRouter();
 
   const { t } = useTranslation();
 
-  // const handleClick = () => {
-  //   window.location.pathname = '/';
-  // };
+  const handleClick = () => {
+    router.push('/application')
+  };
 
   const handleClickLogin = () => {
     dispatch(
@@ -65,7 +66,7 @@ const Header = () => {
               </Link>
             </div>
             <div className="header-right">
-              <Button type="primary">Be a part of us</Button>
+              <Button type="primary" onClick={handleClick}>Be a part of us</Button>
             </div>
           </div>
         </Layout.Header>

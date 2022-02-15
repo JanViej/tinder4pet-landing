@@ -20,14 +20,16 @@ const IndexFeature = ({ className, title, description, image, isReversed, button
               {formatI18nData(description)}
             </div>
           </Fade>
-          <Link href={buttonLink}>
-            <span className="link-wrapper">
-              <span className="link">
-                {formatI18nData(buttonText)}
+          {buttonLink && (
+            <Link href={buttonLink}>
+              <span className="link-wrapper">
+                <span className="link">
+                  {formatI18nData(buttonText)}
+                </span>
+                <ArrowRightOutlined />
               </span>
-              <ArrowRightOutlined />
-            </span>
-          </Link>
+            </Link>
+          )}
         </div>
       </Col>
       <Col lg={14} md={14} sm={24} xs={24}>
