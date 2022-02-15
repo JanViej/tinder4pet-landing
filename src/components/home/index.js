@@ -1,79 +1,47 @@
 import IndexBanner from '@uikit/sections/IndexBanner';
-import ShowCaseSection from '@uikit/sections/ShowCaseSection';
-import SubmitSection from '@uikit/sections/SubmitSection';
 import IndexFeature from '@uikit/sections/IndexFeature';
-import { useTranslation } from 'react-i18next';
 import styled, { createGlobalStyle } from 'styled-components';
-import Link from 'next/link';
-import EditorChoice from './EditorChoice';
 
-const OverwriteGlobalStyle = createGlobalStyle`
-  body {
-    height: 100vh;
-    overflow: hidden;
-  }
-  .ant-layout-content {
-    margin-bottom: 0px;
-    padding-bottom: 0px !important;
-  }
-`;
+const Home = () => (
+  <>
+    {/* <OverwriteGlobalStyle /> */}
+    <HomeWrapper>
+      <IndexBanner />
+      {/* <ShowCaseSection className="show-case-scroll wrapper-full-height" /> */}
 
-const Home = () => {
-  const { t } = useTranslation();
-
-  return (
-    <>
-      {/* <OverwriteGlobalStyle /> */}
-      <HomeWrapper>
-        <IndexBanner />
-        {/* <ShowCaseSection className="show-case-scroll wrapper-full-height" /> */}
-
-        <IndexFeature
-          className="wrapper-full-height"
-          isReversed
-          title={{
-            en: 'What you can do',
-            vi: 'What you can do',
-          }}
-          description={{
-            en: 'Find your pet a friend anywhere, anytime with just a few clicks',
-            vi: 'Find your pet a friend anywhere, anytime with just a few clicks',
-          }}
-          image="/images/bg5.png"
-          extraContent={
-            <div>
-              <br />
-              <li>Create beautiful profile</li>
-              <li>Get match in your area</li>
-              <li>Chat, video call, phone call</li>
-              <li>Find a vet or pet store</li>
-            </div>
+      <IndexFeature
+        className="wrapper-full-height"
+        isReversed
+        title="What you can do"
+        description="Find your pet a friend anywhere, anytime with just a few clicks"
+        image="/images/bg5.png"
+        extraContent={
+          <div>
+            <br />
+            <li>Create beautiful profile</li>
+            <li>Get match in your area</li>
+            <li>Chat, video call, phone call</li>
+            <li>Find a vet or pet store</li>
+          </div>
           }
-        />
+      />
 
-        <IndexFeature
-          buttonLink="/application"
-          className="wrapper-full-height"
-          title={{
-            en: 'More than an app',
-            vi: 'More than an app',
-          }}
-          description={{
-            en: 'We create a port to connect user with vet or store which you can easily find what you really want',
-            vi: 'We create a port to connect user with vet or store which you can easily find what you really want',
-          }}
-          buttonText="Be a part of us"
-          image="/images/bg6.png"
-        />
-        {/* <EditorChoice />
+      <IndexFeature
+        buttonLink="/application"
+        className="wrapper-full-height"
+        title="More than an app"
+        description="We create a port to connect user with vet or store which you can easily find what you really want"
+        buttonText="Be a part of us"
+        image="/images/bg6.png"
+      />
+      {/* <EditorChoice />
         <div className="wrapper-container wrapper-full-height">
 
           <SubmitSection />
         </div> */}
-      </HomeWrapper>
-    </>
+    </HomeWrapper>
+  </>
   );
-};
 
 const HomeWrapper = styled.div`
   .product-section {

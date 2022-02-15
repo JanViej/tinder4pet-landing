@@ -4,7 +4,7 @@ const path = require('path');
 const UnusedWebpackPlugin = require('unused-webpack-plugin');
 const AntdDayjsWebpackPlugin = require('antd-dayjs-webpack-plugin');
 const withPlugins = require('next-compose-plugins');
-const { i18n } = require('./next-i18next.config');
+
 const TerserPlugin = require('terser-webpack-plugin');
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
@@ -24,7 +24,6 @@ const nextConfig = {
   images: {
     domains: [],
   },
-  i18n,
   compress: true,
   // experimental: { esmExternals: true },
   webpack: (config, { isServer, dev }) => {
@@ -72,6 +71,12 @@ const nextConfig = {
           }),
         ],
       };
+    }
+    if (!isServer) {
+      // eslint-disable-next-line
+      config.node = {
+        fs: 'empty',
+      }
     }
 
     config.module.rules.push({

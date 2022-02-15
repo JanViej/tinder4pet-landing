@@ -48,7 +48,7 @@ const Application = () => {
         ) : (
           <Card>
             <h2>Application Form</h2>
-            <div>Submit this application to be a part of us</div>
+            <div style={{ color: '#000'}}>Submit this application to be a part of us</div>
             <br />
             <Form form={form} layout="vertical" onFinish={handleSubmit}>
               <Row gutter={20}>

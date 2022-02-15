@@ -1,6 +1,6 @@
 import { useStore } from '@redux/store';
 import { PersistGate } from 'redux-persist/integration/react';
-import { appWithTranslation } from 'next-i18next';
+
 import { Provider } from 'react-redux';
 import Head from 'next/head';
 import 'styles/globals.css';
@@ -49,4 +49,4 @@ App.propTypes = {
   pageProps: PropTypes.object,
 };
 
-export default appWithTranslation(App);
+export default (App);

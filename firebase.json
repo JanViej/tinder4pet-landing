@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "tinder4pet-landing",
+    "public": "out",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

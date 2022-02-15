@@ -2,16 +2,11 @@ import { Col, Row, Image } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
 import Link from '@uikit/commons/Link';
 import ScrollText from '@uikit/commons/ScrollText';
-import { useTranslation } from 'react-i18next';
 import { Fade } from 'react-awesome-reveal';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { formatI18nData } from 'utils/tools';
-import ImageSlide from './ImageSlide';
 
 export default function IndexBanner({ images, title, description }) {
-  const { t } = useTranslation();
-
   return (
     <div className="position-relative wrapper-full-height index-banner">
       <IndexBannerWrapper>
@@ -26,11 +21,11 @@ export default function IndexBanner({ images, title, description }) {
                   {' '}
                   a
                 </h2>
-                <div className="font-title banner-title">perfect match</div>
+                <div className="font-title banner-title text-highlight">perfect match</div>
                 <Fade delay={0.3} fraction={0.5} triggerOnce>
                   <Link href="https://drive.google.com/file/d/1Z0wXsBzATppdVQHKtDpydn3P12E7mDEg/view?usp=sharing">
-                    <span className="link-wrapper">
-                      <span className="link">Get our app</span>
+                    <span className="link-wrapper text-highlight">
+                      <span className="link text-highlight">Get our app</span>
 
                       <ArrowRightOutlined />
                     </span>

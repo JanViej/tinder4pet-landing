@@ -1,6 +1,5 @@
 import { Col, Row, Space, Image, Layout } from 'antd';
 import Link from 'next/link';
-import { useTranslation } from 'react-i18next';
 import { FooterStyles } from './styles';
 
 const shopUrls = [
@@ -76,38 +75,34 @@ const companyUrls = [
   },
 ]
 
-const Footer = () => {
-  const { t } = useTranslation();
-
-  return (
-    <FooterStyles>
-      <Layout.Footer className="mainFooter">
-        <div className="wrapper-container">
-          <div className="footer-bottom flex-center-between size-l">
-            <Space size={10} className="page-title size-xl">
-              <Image
-                className="section-image"
-                preview={false}
-                src="/images/logo.png"
-                width={34}
-              />
-              <span className="font-title">
-                Tinder4pet
-              </span>
+const Footer = () => (
+  <FooterStyles>
+    <Layout.Footer className="mainFooter">
+      <div className="wrapper-container">
+        <div className="footer-bottom flex-center-between size-l">
+          <Space size={10} className="page-title size-xl">
+            <Image
+              className="section-image"
+              preview={false}
+              src="/images/logo.png"
+              width={34}
+            />
+            <span className="font-title">
+              Tinder4pet
+            </span>
+          </Space>
+          <div className="footer-privacy-term">
+            <Space size={28}>
+              <Link href="#">
+                tinder4pet@gmail.com
+              </Link>
             </Space>
-            <div className="footer-privacy-term">
-              <Space size={28}>
-                <Link href="#">
-                  tinder4pet@gmail.com
-                </Link>
-              </Space>
-            </div>
           </div>
         </div>
-      </Layout.Footer>
-    </FooterStyles>
+      </div>
+    </Layout.Footer>
+  </FooterStyles>
   );
-};
 Footer.propTypes = {};
 
 export default Footer;

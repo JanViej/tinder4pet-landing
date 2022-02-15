@@ -1,13 +1,10 @@
 import styled from 'styled-components';
-import { useTranslation } from 'react-i18next'
 
-const ScrollText = ({ color = '#000' }) => {
-  const { t } = useTranslation()
-  return (
-    <ScrollTextWrapper color={color}>
-      {t('text.scrollMore')}
-    </ScrollTextWrapper>
-)}
+const ScrollText = ({ color = '#000' }) => (
+  <ScrollTextWrapper color={color}>
+    Scroll down for more
+  </ScrollTextWrapper>
+)
 
 const ScrollTextWrapper = styled.div`
   color: ${({ color }) => color};

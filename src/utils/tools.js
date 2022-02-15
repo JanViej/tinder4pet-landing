@@ -6,7 +6,6 @@ import debounce from 'lodash/debounce';
 import values from 'lodash/values';
 import reduce from 'lodash/reduce';
 import { SEO_VAR } from 'configs/seo';
-import { i18n } from 'next-i18next';
 import { getImageUrl as getImageUrlS3 } from 'components/Image';
 
 const relativeTime = require('dayjs/plugin/relativeTime');
@@ -148,11 +147,6 @@ export const changeStringNoSign = (alias) => {
   str = str.replace(/đ|ð/g, 'd');
   return str;
 };
-
-export const formatI18nData = (data) =>
-  typeof data === 'string'
-    ? data
-    : data?.[i18n.language] || values(data).find((e) => !!e);
 
 export const convertToI18nData = text => ({
   en: text,

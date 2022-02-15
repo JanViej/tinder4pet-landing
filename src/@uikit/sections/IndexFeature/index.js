@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { Row, Col, Image } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
-import { formatI18nData } from 'utils/tools';
 import { Fade } from 'react-awesome-reveal';
 import styled from 'styled-components';
 import Link from '@uikit/commons/Link';
@@ -14,18 +13,18 @@ const IndexFeature = ({ className, title, description, image, isReversed, button
     >
       <Col lg={10} md={10} sm={24} xs={24}>
         <div className="banner-info">
-          <div className="font-title feature-title size-xxxl" dangerouslySetInnerHTML={{ __html: formatI18nData(title) }} />
+          <div className="font-title feature-title text-highlight size-xxxl" dangerouslySetInnerHTML={{ __html: title }} />
           <Fade fraction={0.5} triggerOnce>
             <div className="description">
-              {formatI18nData(description)}
+              {description}
               {extraContent && extraContent}
             </div>
           </Fade>
           {buttonLink && (
             <Link href={buttonLink}>
-              <span className="link-wrapper">
-                <span className="link">
-                  {formatI18nData(buttonText)}
+              <span className="link-wrapper text-highlight">
+                <span className="link text-highlight">
+                  {buttonText}
                 </span>
                 <ArrowRightOutlined />
               </span>

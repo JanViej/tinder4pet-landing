@@ -1,18 +1,14 @@
 import { useRef, useEffect } from 'react';
 
 // import PropTypes from 'prop-types';
-import { Layout, Button, Image } from 'antd';
+import { Layout, Button, Image, Space } from 'antd';
 import set from 'lodash/set';
 import { MenuOutlined } from '@ant-design/icons';
 import { useSelector, useDispatch } from 'react-redux';
 import { useRouter } from 'next/router';
 import { setModalConfig } from '@redux/config/actions';
-import { useTranslation } from 'react-i18next';
 import dynamic from 'next/dynamic';
 import { HeaderStyles } from './styles';
-import DrawerMenuMobile from './DrawerMenuMobile';
-import MenuHeader from './MenuHeader';
-import DrawerSearchMobile from './DrawerSearchMobile';
 import Link from '../../commons/Link';
 
 // const LanguageDropdown = dynamic(() => import('./LanguageDropdown'), {
@@ -24,8 +20,6 @@ const Header = () => {
   const mobileSearchRef = useRef();
   const dispatch = useDispatch();
   const router = useRouter();
-
-  const { t } = useTranslation();
 
   const handleClick = () => {
     router.push('/application')
@@ -54,15 +48,20 @@ const Header = () => {
           <div className="header-wrapper w-full flex-center-between">
             <div className="header-left">
               <Link href="/">
-                <div className="page-title font-title size-xl">
+                <Space size={10} className="page-title font-title size-xl">
                   <Image
                     className="section-image"
                     preview={false}
                     src="/images/logo.png"
                     width={34}
+                    style={{
+                      marginTop: '20px',
+                    }}
                   />
-                  Tinder4pet
-                </div>
+                  <span className="font-title text-highlight">
+                    Tinder4pet
+                  </span>
+                </Space>
               </Link>
             </div>
             <div className="header-right">

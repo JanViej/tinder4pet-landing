@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start -p 8221",
     "lint": "eslint --ext .tsx,.ts,.js,.jsx src/ --fix",
     "storybook": "start-storybook -p 9009",
