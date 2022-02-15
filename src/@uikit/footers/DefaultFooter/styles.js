@@ -11,7 +11,7 @@ export const FooterStyles = styled.div`
   }
 
   .ant-layout-footer {
-    padding: 70px 0 40px 0 !important;
+    padding: 40px 0 !important;
   }
 
   .footer-logo {

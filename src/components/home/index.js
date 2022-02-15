@@ -27,30 +27,40 @@ const Home = () => {
       <HomeWrapper>
         <IndexBanner />
         <ShowCaseSection className="show-case-scroll wrapper-full-height" />
-        <IndexFeature buttonLink="/contact-us" className="wrapper-full-height" />
+        
         <IndexFeature
           className="wrapper-full-height"
           isReversed
-          buttonText={{
-            en: 'Read our story',
-            vi: 'Xem thêm về chúng tôi',
-          }}
-          buttonLink="/about-us"
           title={{
-            en: 'Award-winning coffee from every corner of Asia',
-            vi: 'Cà phê từng đoạt giải thưởng từ mọi nơi trên Châu Á ',
+            en: 'What you can do',
+            vi: 'What you can do',
           }}
           description={{
-            en: 'Enjoy a new coffee every time sent direct by the best craft roasters in the nation. Try hundreds of single origin, fair-trade, and even decaf coffees sourced from all across the world.',
-            vi: 'Thưởng thức một ly cà phê mới mỗi lần được gửi trực tiếp bởi các nhà rang xay thủ công tốt nhất trên toàn quốc. Hãy thử hàng trăm loại cà phê có xuất xứ duy nhất, thương mại công bằng, và thậm chí cả cà phê decaf có nguồn gốc từ khắp nơi trên thế giới. ',
+            en: 'Find your pet a friend anywhere, anytime with just a few clicks',
+            vi: 'Find your pet a friend anywhere, anytime with just a few clicks',
           }}
-          image="/images/background4.png"
+          image="/images/bg5.png"
         />
-        <EditorChoice />
+
+        <IndexFeature
+          buttonLink="/application"
+          className="wrapper-full-height"
+          title={{
+            en: 'More than an app',
+            vi: 'More than an app',
+          }}
+          description={{
+            en: 'We create a port to connect user with vet or store which you can easily find what you really want',
+            vi: 'We create a port to connect user with vet or store which you can easily find what you really want',
+          }}
+          buttonText="Be a part of us"
+          image="/images/bg6.png"
+        />
+        {/* <EditorChoice />
         <div className="wrapper-container wrapper-full-height">
 
           <SubmitSection />
-        </div>
+        </div> */}
       </HomeWrapper>
     </>
   )
